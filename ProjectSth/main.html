@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML, CSS, and JavaScript Example</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-    <h1 id="main-title">Welcome to My Simple Page</h1>
-    <p id="intro-text">This is a paragraph of text that will change when you click the button.</p>
-    
-    <button onclick="changeText()">Click Me</button>
-
-    <script src="script.js"></script> <!-- Link to external JS file -->
+<body onload="initGallery()">
+    <h1>Interactive Photo Gallery</h1>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Description of image 1" class="gallery-image" tabindex="0">
+        <img src="image2.jpg" alt="Description of image 2" class="gallery-image" tabindex="0">
+        <img src="image3.jpg" alt="Description of image 3" class="gallery-image" tabindex="0">
+        <img src="image4.jpg" alt="Description of image 4" class="gallery-image" tabindex="0">
+        <img src="image5.jpg" alt="Description of image 5" class="gallery-image" tabindex="0">
+        <img src="image6.jpg" alt="Description of image 6" class="gallery-image" tabindex="0">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
