@@ -1,32 +1,32 @@
-/* Basic styles for the HTML elements */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 20px;
     text-align: center;
+    background-color: #f0f0f0;
 }
 
-h1 {
-    color: #2e8b57;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
 }
 
-p {
-    font-size: 18px;
-    color: #555;
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    transition: border 0.3s;
 }
 
-button {
-    background-color: #008cba;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+.gallery-image:hover {
+    border: 2px solid blue;
 }
 
-button:hover {
-    background-color: #005f8a;
+.gallery-image:focus {
+    outline: none;
+    border: 2px solid green;
+}
+
+.gallery-image:blur {
+    border: 2px solid transparent;
 }
